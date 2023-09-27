@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.group:hover .bsvg {
+    stroke: none;
+    filter: drop-shadow(0 0 15px #e4e4e496);
+}
+.featureCard2:hover .featureCardSVG{
+    stroke: none;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.63));
+}
+@media screen and (min-width:48em) {
+    #sp {
+        background-size: calc(100% * 2) 105%;
+    }
+}
+
+.moveimage{
+    animation: 4s infinite linear moveCompany;
+}
+
+@keyframes  moveCompany {
+    0%{
+        top:0;
+    }
+    100%{
+        top:-100%;
+    }
+}
+.banner{
+    background: linear-gradient(to right, #0075d3, #006ccf, #0162ca, #0d58c4, #194ebe, #494ab6, #6245ae, #7441a5, #90479a, #a25190, #ae5f8a, #b46f87);
+}
